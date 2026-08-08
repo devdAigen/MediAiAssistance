@@ -1,0 +1,17 @@
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/Debug/net8.0/AiAssistant.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/Debug/net8.0/AiAssistant.Infrastructure.AssemblyInfoInputs.cache
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/Debug/net8.0/AiAssistant.Infrastructure.AssemblyInfo.cs
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/Debug/net8.0/AiAssistant.Infrastructure.csproj.CoreCompileInputs.cache
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/Debug/net8.0/AiAssistant.Infrastructure.csproj.AssemblyReference.cache
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/bin/Debug/net8.0/AiAssistant.Infrastructure.deps.json
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/bin/Debug/net8.0/AiAssistant.Infrastructure.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/bin/Debug/net8.0/AiAssistant.Infrastructure.pdb
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/bin/Debug/net8.0/AiAssistant.Application.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/bin/Debug/net8.0/AiAssistant.Domain.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/bin/Debug/net8.0/AiAssistant.Application.pdb
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/bin/Debug/net8.0/AiAssistant.Domain.pdb
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/Debug/net8.0/AiAssistant.Infrastructure.csproj.CopyComplete
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/Debug/net8.0/AiAssistant.Infrastructure.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/Debug/net8.0/refint/AiAssistant.Infrastructure.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/Debug/net8.0/AiAssistant.Infrastructure.pdb
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/Debug/net8.0/ref/AiAssistant.Infrastructure.dll

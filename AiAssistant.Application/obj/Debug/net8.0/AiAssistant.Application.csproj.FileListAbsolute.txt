@@ -1,0 +1,15 @@
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/bin/Debug/net8.0/AiAssistant.Application.deps.json
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/bin/Debug/net8.0/AiAssistant.Application.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/bin/Debug/net8.0/AiAssistant.Application.pdb
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/bin/Debug/net8.0/AiAssistant.Domain.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/bin/Debug/net8.0/AiAssistant.Domain.pdb
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/Debug/net8.0/AiAssistant.Application.csproj.AssemblyReference.cache
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/Debug/net8.0/AiAssistant.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/Debug/net8.0/AiAssistant.Application.AssemblyInfoInputs.cache
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/Debug/net8.0/AiAssistant.Application.AssemblyInfo.cs
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/Debug/net8.0/AiAssistant.Application.csproj.CoreCompileInputs.cache
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/Debug/net8.0/AiAssistant.Application.csproj.CopyComplete
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/Debug/net8.0/AiAssistant.Application.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/Debug/net8.0/refint/AiAssistant.Application.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/Debug/net8.0/AiAssistant.Application.pdb
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/Debug/net8.0/ref/AiAssistant.Application.dll

@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "AiAssistant.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/AiAssistant.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AiAssistant.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AiAssistant.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AiAssistant.Domain/AiAssistant.Domain.csproj",
+      "msbuildProject": "../AiAssistant.Domain/AiAssistant.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "AiAssistant.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/devd/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/AiAssistant.Application.csproj",
+      "projectName": "AiAssistant.Application",
+      "projectPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/AiAssistant.Application.csproj",
+      "packagesPath": "/home/devd/.nuget/packages/",
+      "outputPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/devd/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/AiAssistant.Domain.csproj": {
+              "projectPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/AiAssistant.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

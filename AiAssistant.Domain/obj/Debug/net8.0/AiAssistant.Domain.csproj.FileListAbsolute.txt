@@ -1,0 +1,11 @@
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/bin/Debug/net8.0/AiAssistant.Domain.deps.json
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/bin/Debug/net8.0/AiAssistant.Domain.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/bin/Debug/net8.0/AiAssistant.Domain.pdb
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/obj/Debug/net8.0/AiAssistant.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/obj/Debug/net8.0/AiAssistant.Domain.AssemblyInfoInputs.cache
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/obj/Debug/net8.0/AiAssistant.Domain.AssemblyInfo.cs
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/obj/Debug/net8.0/AiAssistant.Domain.csproj.CoreCompileInputs.cache
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/obj/Debug/net8.0/AiAssistant.Domain.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/obj/Debug/net8.0/refint/AiAssistant.Domain.dll
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/obj/Debug/net8.0/AiAssistant.Domain.pdb
+/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/obj/Debug/net8.0/ref/AiAssistant.Domain.dll

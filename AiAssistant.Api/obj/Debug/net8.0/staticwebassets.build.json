@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pxEoKJZuekBo0Zt+yp/HFcuV0bustUHFBVkncANcWUE=",
+  "Source": "AiAssistant.Api",
+  "BasePath": "_content/AiAssistant.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

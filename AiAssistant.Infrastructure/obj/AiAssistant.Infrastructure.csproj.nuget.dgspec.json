@@ -1,0 +1,181 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/AiAssistant.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/AiAssistant.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/AiAssistant.Application.csproj",
+        "projectName": "AiAssistant.Application",
+        "projectPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/AiAssistant.Application.csproj",
+        "packagesPath": "/home/devd/.nuget/packages/",
+        "outputPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/devd/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/AiAssistant.Domain.csproj": {
+                "projectPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/AiAssistant.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/AiAssistant.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/AiAssistant.Domain.csproj",
+        "projectName": "AiAssistant.Domain",
+        "projectPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/AiAssistant.Domain.csproj",
+        "packagesPath": "/home/devd/.nuget/packages/",
+        "outputPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/devd/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/AiAssistant.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/AiAssistant.Infrastructure.csproj",
+        "projectName": "AiAssistant.Infrastructure",
+        "projectPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/AiAssistant.Infrastructure.csproj",
+        "packagesPath": "/home/devd/.nuget/packages/",
+        "outputPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/devd/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/AiAssistant.Application.csproj": {
+                "projectPath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Application/AiAssistant.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

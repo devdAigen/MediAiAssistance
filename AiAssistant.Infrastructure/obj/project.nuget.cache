@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "wZKmC+THdUEJeZpsExKxmxz2NbOHPC9H5GP2K75qNQ8lBAwmyfcHa8eXmetLMtR6yf89uTzdo59+v/NprZIiIw==",
+  "success": true,
+  "projectFilePath": "/home/devd/Documents/Project/MediAiAssistance/AiAssistant.Infrastructure/AiAssistant.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/home/devd/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.10/microsoft.extensions.configuration.abstractions.10.0.10.nupkg.sha512",
+    "/home/devd/.nuget/packages/microsoft.extensions.primitives/10.0.10/microsoft.extensions.primitives.10.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
