@@ -1,4 +1,6 @@
 using AiAssistant.Application.Interfaces;
+using AiAssistant.Application.Utilities;
+
 namespace AiAssistant.Application.Service;
 public class VectorSearchService
 {
@@ -25,7 +27,7 @@ public class VectorSearchService
     }
 
     var queryVector = embeddingService
-        .GenerateEmbeddingAsync(query)
+        .GenerateEmbeddingAsync(query, "document", CancellationToken.None)
         .GetAwaiter()
         .GetResult();
 
@@ -34,7 +36,7 @@ public class VectorSearchService
         {
             Chunk = chunk,
             Score = CosineSimilarity(
-                queryVector,
+                queryVector.Embedding,
                 chunk.Embedding)
         })
         .OrderByDescending(x => x.Score)
@@ -43,7 +45,7 @@ public class VectorSearchService
         .ToList();
 }
 
-    private static double CosineSimilarity(
+    public static double CosineSimilarity(
         float[] a,
         float[] b)
     {
