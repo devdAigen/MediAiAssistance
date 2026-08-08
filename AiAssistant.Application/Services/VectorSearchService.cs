@@ -2,29 +2,46 @@ using AiAssistant.Application.Interfaces;
 namespace AiAssistant.Application.Service;
 public class VectorSearchService
 {
-    public List<(DocumentChunk Chunk, double Score)> Search(
-        string query,
-        List<DocumentChunk> chunks,
-        IEmbeddingService embeddingService,
-        int topK = 3)
+   public List<(DocumentChunk Chunk, double Score)> Search(
+    string query,
+    List<DocumentChunk> chunks,
+    IEmbeddingService embeddingService,
+    string? patientId = null,
+    string? department = null,
+    int topK = 3)
+{
+    var candidates = chunks.AsEnumerable();
+
+    if (!string.IsNullOrEmpty(patientId))
     {
-        var queryVector = embeddingService.GenerateEmbeddingAsync(query)
-            .GetAwaiter()
-            .GetResult();
-
-        var results = chunks
-            .Select(chunk => new
-            {
-                Chunk = chunk,
-                Score = CosineSimilarity(queryVector, chunk.Embedding)
-            })
-            .OrderByDescending(x => x.Score)
-            .Take(topK)
-            .Select(x => (x.Chunk, x.Score))
-            .ToList();
-
-        return results;
+        candidates = candidates.Where(
+            x => x.PatientId == patientId);
     }
+
+    if (!string.IsNullOrEmpty(department))
+    {
+        candidates = candidates.Where(
+            x => x.Department == department);
+    }
+
+    var queryVector = embeddingService
+        .GenerateEmbeddingAsync(query)
+        .GetAwaiter()
+        .GetResult();
+
+    return candidates
+        .Select(chunk => new
+        {
+            Chunk = chunk,
+            Score = CosineSimilarity(
+                queryVector,
+                chunk.Embedding)
+        })
+        .OrderByDescending(x => x.Score)
+        .Take(topK)
+        .Select(x => (x.Chunk, x.Score))
+        .ToList();
+}
 
     private static double CosineSimilarity(
         float[] a,
