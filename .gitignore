@@ -1,1 +1,3 @@
 AiAssistant.Api/appsettings.Development.json
+**/bin/
+**/obj/
