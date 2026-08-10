@@ -1,5 +1,6 @@
 using AiAssistant.Application.Interfaces;
 using AiAssistant.Application.Utilities;
+using AiAssistant.Domain.Entities;
 
 namespace AiAssistant.Application.Service;
 public class VectorSearchService

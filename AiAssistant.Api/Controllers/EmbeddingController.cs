@@ -54,7 +54,7 @@ public class EmbeddingController : ControllerBase
                     "document", CancellationToken.None);
                 embeddings.Add(embedding);
             }
-            int topK = 3; // You can adjust this value as needed
+          //  int topK = 3; // You can adjust this value as needed
             int embeddingDimension = embeddings.FirstOrDefault()?.Embedding.Length ?? 0;
             int numEmbeddings = embeddings.Count;
 

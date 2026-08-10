@@ -1,3 +1,4 @@
+namespace AiAssistant.Domain.Entities;
 public class DocumentChunk
 {
     public Guid Id { get; set; }
@@ -7,6 +8,7 @@ public class DocumentChunk
     public string Content { get; set; } = string.Empty;
 
     public int ChunkIndex { get; set; }
+    public Document Document { get; set; } = null!;
 
     public int? PageNumber { get; set; }
 
@@ -16,6 +18,5 @@ public class DocumentChunk
 
     public DateTime? VisitDate { get; set; }
     public DateTime? CreatedAt { get; set; }
-
-    public float[] Embedding { get; set; } = [];
+    public float[] Embedding { get; set; } = Array.Empty<float>();
 }

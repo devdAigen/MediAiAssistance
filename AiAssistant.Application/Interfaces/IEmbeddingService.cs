@@ -1,4 +1,6 @@
 using AiAssistant.Application.Models;
+using AiAssistant.Domain.Entities;
+
 namespace AiAssistant.Application.Interfaces;
 public interface IEmbeddingService
 {

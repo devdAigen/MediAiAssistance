@@ -1,8 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using AiAssistant.Infrastructure.Persistence;
 using AiAssistant.Infrastructure.Embeddings;
 using AiAssistant.Application.Interfaces;
-using AiAssistant.Application.Service;
-using AiAssistant.Infrastructure.Persistence;
-using Microsoft.Extensions.Configuration;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +13,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient<IEmbeddingService, VoyageEmbeddingService>();
 builder.Services.AddDbContext<AiAssistantDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("AiAssistantDb")));
+{
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("AiAssistantDb"),
+        npgsqlOptions =>
+        {
+            npgsqlOptions.UseVector();
+        });
+});
 builder.Services.AddControllers();
 var app = builder.Build();
 
