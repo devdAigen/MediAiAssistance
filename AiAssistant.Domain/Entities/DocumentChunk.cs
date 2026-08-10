@@ -8,13 +8,14 @@ public class DocumentChunk
 
     public int ChunkIndex { get; set; }
 
-    public int PageNumber { get; set; }
+    public int? PageNumber { get; set; }
 
     public string? PatientId { get; set; }
 
     public string? Department { get; set; }
 
     public DateTime? VisitDate { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
     public float[] Embedding { get; set; } = [];
 }

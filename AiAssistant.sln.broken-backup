@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AiAssistant.Infrastructure", "AiAssistant.Infrastructure", "{7D542470-4D1E-43AB-B650-4035A3F6C121}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Embeddings", "Embeddings", "{5C244E71-C563-4C5C-849F-3A54471B6EF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C244E71-C563-4C5C-849F-3A54471B6EF5} = {7D542470-4D1E-43AB-B650-4035A3F6C121}
+	EndGlobalSection
+EndGlobal

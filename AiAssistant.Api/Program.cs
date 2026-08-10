@@ -1,6 +1,7 @@
 using AiAssistant.Infrastructure.Embeddings;
 using AiAssistant.Application.Interfaces;
 using AiAssistant.Application.Service;
+using AiAssistant.Infrastructure.Persistence;
 using Microsoft.Extensions.Configuration;
 
 
@@ -11,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient<IEmbeddingService, VoyageEmbeddingService>();
+builder.Services.AddDbContext<AiAssistantDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("AiAssistantDb")));
 builder.Services.AddControllers();
 var app = builder.Build();
 
