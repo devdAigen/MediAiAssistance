@@ -18,5 +18,6 @@ public class DocumentChunk
 
     public DateTime? VisitDate { get; set; }
     public DateTime? CreatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
     public float[] Embedding { get; set; } = Array.Empty<float>();
 }

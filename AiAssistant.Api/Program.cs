@@ -21,6 +21,9 @@ builder.Services.AddDbContext<AiAssistantDbContext>(options =>
             npgsqlOptions.UseVector();
         });
 });
+
+builder.Services.AddScoped<IApplicationDbContext>(s=> s.GetRequiredService<AiAssistantDbContext>());
+builder.Services.AddScoped<IDocumentService,DocumentService>();
 builder.Services.AddControllers();
 var app = builder.Build();
 

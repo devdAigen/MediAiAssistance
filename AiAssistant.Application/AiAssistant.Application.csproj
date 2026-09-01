@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AiAssistant.Domain\AiAssistant.Domain.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.4" />
   </ItemGroup>
 
   <PropertyGroup>
