@@ -16,7 +16,7 @@ public class DocumentController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create([FromBody] RequestDocument document, CancellationToken cancellationToken)
+    public async Task<IActionResult> Create([FromBody] DocumentResponse document, CancellationToken cancellationToken)
     {
         if (string.IsNullOrWhiteSpace(document.FileName))
         {
@@ -26,23 +26,46 @@ public class DocumentController : ControllerBase
         var documentObj = new Document
         {
             FileName = document.FileName,
-            Source= document.Source,
+            Source = document.Source,
 
-            Chunks = document.Chunks.Select(chunk=> 
+            Chunks = document.Chunks.Select(chunk =>
             new DocumentChunk
             {
-              Content = chunk.Content,
-              ChunkIndex = chunk.ChunkIndex,
-              PageNumber= chunk.PageNumber,
-              PatientId = chunk.PatientId,
-              Department= chunk.Department,
-              VisitDate = chunk.VisitDate
+                Content = chunk.Content,
+                ChunkIndex = chunk.ChunkIndex,
+                PageNumber = chunk.PageNumber,
+                PatientId = chunk.PatientId,
+                Department = chunk.Department,
+                VisitDate = chunk.VisitDate
             }
             ).ToList()
         };
 
         var result = await _documentService.AddDocumentAsync(documentObj, cancellationToken);
-        return Ok(result);
+
+        var response = new DocumentResponse
+        {
+            Id = result.Id,
+            FileName = result.FileName,
+            Source = result.Source,
+            Created = result.CreatedAtUtc,
+            Updated = result.UpdatedAtUtc,
+
+            Chunks = result.Chunks.Select(chunk => new DocumentChunkResponse
+            {
+                Id = chunk.Id,
+                DocumentId = chunk.DocumentId,
+                Content = chunk.Content,
+                ChunkIndex = chunk.ChunkIndex,
+                PageNumber = chunk.PageNumber,
+                PatientId = chunk.PatientId,
+                Department = chunk.Department,
+                VisitDate = chunk.VisitDate,
+                HasEmbedding = chunk.Embedding is { Length: > 0 }
+            }).ToList()
+        };
+
+        return Ok(response);
     }
 
 }
