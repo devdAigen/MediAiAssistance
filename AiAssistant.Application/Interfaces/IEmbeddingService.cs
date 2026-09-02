@@ -8,10 +8,3 @@ public interface IEmbeddingService
         string inputType,
         CancellationToken cancellationToken = default);
 }
-
-public interface ILanguageModel
-{
-    Task<string> GenerateAsync(
-        string question,
-        IEnumerable<DocumentChunk> context);
-}

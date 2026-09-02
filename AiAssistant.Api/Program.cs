@@ -3,6 +3,9 @@ using AiAssistant.Infrastructure.Persistence;
 using AiAssistant.Infrastructure.Embeddings;
 using AiAssistant.Application.Interfaces;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
+using AiAssistant.Infrastructure.VectorStore;
+using AiAssistant.Application.Service;
+using AiAssistant.Infrastructure.LLM;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +27,9 @@ builder.Services.AddDbContext<AiAssistantDbContext>(options =>
 
 builder.Services.AddScoped<IApplicationDbContext>(s=> s.GetRequiredService<AiAssistantDbContext>());
 builder.Services.AddScoped<IDocumentService,DocumentService>();
+builder.Services.AddScoped<IVectorSearchService,PgVectorSearchService>();
+builder.Services.AddScoped<RagService>();
+builder.Services.AddScoped<ILanguageModel,OpenAIService>();
 builder.Services.AddControllers();
 var app = builder.Build();
 
@@ -36,25 +42,25 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+// var summaries = new[]
+// {
+//     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+// };
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+// app.MapGet("/weatherforecast", () =>
+// {
+//     var forecast =  Enumerable.Range(1, 5).Select(index =>
+//         new WeatherForecast
+//         (
+//             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+//             Random.Shared.Next(-20, 55),
+//             summaries[Random.Shared.Next(summaries.Length)]
+//         ))
+//         .ToArray();
+//     return forecast;
+// })
+// .WithName("GetWeatherForecast")
+// .WithOpenApi();
 app.MapControllers();
 
 app.Run();
